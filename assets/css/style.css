@@ -1,0 +1,884 @@
+/* General Body Styling - Ultra-Clean Professional */
+body {
+    font-family: 'Inter', sans-serif; /* A modern, clean font */
+    background-color: #f8f8f8; /* Very light, almost white background */
+    color: #333; /* Soft dark grey for primary text */
+    line-height: 1.6;
+}
+
+/* Ultra-Clean Professional Color Palette Variables */
+:root {
+    --primary-color: #007bff; /* Standard blue for primary actions (can be customized) */
+    --secondary-color: #6c757d; /* Muted grey for secondary actions and text */
+    --accent-color: #28a745; /* Green for success/positive actions */
+    --light-bg-color: #ffffff; /* Pure white for card backgrounds */
+    --dark-text-color: #212529;
+    --light-text-color: #ffffff;
+    --border-color: #e0e0e0; /* Very light grey for borders */
+    --shadow-color: rgba(0, 0, 0, 0.05); /* Extremely subtle shadow */
+}
+
+/* Navbar Customizations */
+.navbar {
+    border-bottom: 1px solid var(--border-color); /* Clean border at bottom */
+    background-color: var(--light-bg-color) !important;
+    box-shadow: 0 1px 3px var(--shadow-color); /* Subtle shadow for navbar */
+}
+.navbar-brand {
+    font-weight: 700; /* Bolder for brand */
+    color: var(--dark-text-color) !important;
+}
+.nav-link {
+    color: var(--secondary-color) !important;
+    padding: 0.5rem 1rem !important; /* Adjust padding for clean look */
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.nav-link:hover {
+    color: var(--primary-color) !important;
+    background-color: #f0f0f0; /* Subtle hover background */
+    border-radius: 0.25rem;
+}
+.nav-link.active {
+    font-weight: 600;
+    color: var(--primary-color) !important;
+    background-color: #f5f5f5; /* Subtle active background */
+    border-radius: 0.25rem;
+}
+
+.hero-section {
+    background-image: none;
+    background-size: contain; /* Changed to contain to ensure full image is visible */
+    background-position: center;
+    color: var(--light-text-color);
+    padding: 240px 0; /* More substantial padding */
+    position: relative;
+    box-shadow: none; /* Remove shadow for a flatter look */
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4); /* Reintroduce subtle text shadow for readability on image */
+}
+.hero-section::before {
+    background-color: rgba(0, 0, 0, 0.55); /* Slightly darker overlay */
+}
+.hero-section .display-4 {
+    font-size: 3.8rem;
+    font-weight: 800; /* Extra bold */
+}
+.hero-section .lead {
+    font-size: 1.35rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-section .btn {
+    padding: 0.75rem 2rem; /* Larger buttons */
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 0.3rem;
+}
+
+/* Featured Categories Overlay Card - Refined Professional */
+.featured-categories {
+    padding: 60px 0;
+    background-color: #f8f8f8; /* Consistent light background */
+}
+.featured-categories h2 {
+    font-weight: 700;
+    color: var(--dark-text-color);
+    margin-bottom: 2.5rem;
+}
+.overlay-card {
+    border: 1px solid var(--border-color); /* Light border for definition */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px var(--shadow-color); /* More visible but still subtle shadow */
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    background-color: var(--light-bg-color);
+    position: relative;
+    display: flex; /* Flexbox for consistent height if needed, though img covers */
+    align-items: center;
+    justify-content: center;
+    min-height: 180px; /* Ensure a minimum height for cards */
+}
+
+.overlay-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Clearer hover shadow */
+    transform: translateY(-8px); /* More pronounced lift */
+}
+
+.overlay-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the card area */
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(0.9); /* Slightly less dim to show more image */
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.overlay-card:hover img {
+    filter: brightness(0.7); /* Dims image on hover to highlight text */
+    transform: scale(1.05); /* Gentle zoom on image */
+}
+
+.overlay-card .card-img-overlay {
+    background: rgba(0, 0, 0, 0.2); /* Very subtle initial overlay */
+    transition: background 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure overlay is above image but below text */
+}
+
+.overlay-card:hover .card-img-overlay {
+    background: rgba(0, 0, 0, 0.4); /* Darker overlay on hover */
+}
+
+.overlay-card .card-title {
+    color: var(--light-text-color);
+    font-weight: 700;
+    font-size: 1.8rem; /* Larger, more impactful title */
+    position: relative;
+    z-index: 2; /* Ensure text is above overlay */
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.6); /* Clearer text shadow */
+    letter-spacing: 0.05em; /* Subtle letter spacing */
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.overlay-card .stretched-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3; /* Ensure link is clickable over everything */
+}
+
+/* Product Card Styling - Ultra-Clean Professional */
+.new-arrivals {
+    padding: 60px 0;
+    background-color: #f0f0f0; /* Slightly off-white background for this section */
+}
+.new-arrivals h2 {
+    font-weight: 700;
+    color: var(--dark-text-color);
+    margin-bottom: 2.5rem;
+}
+.product-card {
+    box-shadow: 0 2px 8px var(--shadow-color); /* Ultra subtle shadow */
+    transition: all 0.2s ease-in-out;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: var(--light-bg-color);
+    border: 1px solid var(--border-color); /* Very light border */
+}
+.product-card:hover {
+    transform: translateY(-3px); /* Subtle lift */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Slightly more visible shadow on hover */
+}
+.product-card .card-img-top {
+    height: 200px; /* Consistent image height */
+    object-fit: cover; /* Ensures images cover the area */
+    border-bottom: 1px solid var(--border-color); /* Very light separator */
+}
+.product-card .card-body {
+    padding: 1.25rem;
+    text-align: left; /* Align text to left for professionalism */
+}
+.product-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark-text-color);
+    margin-bottom: 0.4rem;
+}
+.product-card .card-text {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.product-card .btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.25rem;
+}
+
+/* Promotional Section */
+.promo-section {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(135deg, var(--primary-color) 0%, #0069d9 100%); /* Blue gradient */
+    color: var(--light-text-color);
+    padding: 80px 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.promo-section h2 {
+    font-weight: 700;
+}
+.promo-section .btn {
+    background-color: var(--light-bg-color);
+    color: var(--primary-color);
+    border: none;
+    font-weight: 600;
+}
+.promo-section .btn:hover {
+    background-color: #e2e6ea;
+    color: var(--primary-color);
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+.testimonials h2 {
+    font-weight: 700;
+    color: var(--dark-text-color);
+    margin-bottom: 2.5rem;
+}
+.testimonials .card {
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    background-color: var(--light-bg-color);
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+.testimonials .card-text {
+    font-style: normal; /* Remove italics */
+    font-size: 1rem;
+    color: var(--dark-text-color);
+}
+.testimonials .blockquote-footer {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+/* General button styling - Ultra-Clean Professional */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: all 0.2s ease;
+    border-radius: 0.25rem;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border-radius: 0.25rem;
+}
+.btn-outline-primary:hover {
+    color: var(--light-text-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.btn-success { /* For place order button in checkout */
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    font-weight: 600;
+    border-radius: 0.25rem;
+}
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+/* Specific styling for Shop Page - Ultra-Clean Professional */
+.container {
+    max-width: 1200px; /* Max width for content */
+}
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+.breadcrumb-item a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.breadcrumb-item.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.card-header {
+    background-color: var(--light-bg-color); /* Clean white header */
+    color: var(--dark-text-color);
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 1.25rem;
+}
+
+.list-group-item {
+    background-color: var(--light-bg-color);
+    border-color: var(--border-color);
+    padding: 0.75rem 1.25rem;
+}
+.list-group-item a {
+    color: var(--dark-text-color);
+    transition: color 0.2s ease;
+}
+.list-group-item a:hover {
+    color: var(--primary-color);
+}
+
+.form-range {
+    margin-top: 0.5rem;
+}
+
+.btn-secondary { /* For sorting dropdown */
+    background-color: var(--light-bg-color);
+    border-color: var(--border-color);
+    color: var(--dark-text-color);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-radius: 0.25rem;
+}
+.btn-secondary:hover {
+    background-color: #f0f0f0;
+    border-color: #d0d0d0;
+    color: var(--dark-text-color);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.dropdown-menu {
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px var(--shadow-color);
+    border-radius: 0.5rem;
+}
+.dropdown-item {
+    color: var(--dark-text-color);
+    transition: background-color 0.1s ease;
+}
+.dropdown-item:hover {
+    background-color: #f5f5f5;
+    color: var(--primary-color);
+}
+
+.pagination {
+    margin-top: 2rem;
+}
+.page-item .page-link {
+    color: var(--primary-color);
+    border-color: var(--border-color);
+    transition: all 0.2s ease;
+    border-radius: 0.25rem;
+    margin: 0 0.1rem; /* Small gap between pages */
+}
+.page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--light-text-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.page-item .page-link:hover {
+    background-color: var(--light-bg-color);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.page-item.disabled .page-link {
+    color: var(--secondary-color);
+    background-color: var(--light-bg-color);
+    border-color: var(--border-color);
+}
+
+/* Small utility for icons in forms/lists */
+.bi {
+    vertical-align: -0.125em;
+    margin-right: 0.25rem;
+    color: var(--primary-color); /* Give icons a subtle primary color */
+}
+
+/* Specific styling for product detail page thumbnail gallery */
+.thumbnail-gallery .thumbnail {
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.thumbnail-gallery .thumbnail:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+.thumbnail-gallery .thumbnail.active {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+/* Accordion in checkout/product detail */
+.accordion-button {
+    font-weight: 600;
+    color: var(--dark-text-color) !important;
+    background-color: var(--light-bg-color) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 0.25rem !important;
+    box-shadow: none !important;
+    transition: all 0.2s ease;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--primary-color) !important;
+    background-color: #f5f5f5 !important;
+    border-bottom-color: var(--primary-color) !important;
+}
+.accordion-button:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+.accordion-body {
+    background-color: #fcfcfc;
+    border: 1px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 0.25rem 0.25rem;
+}
+
+/* Form controls - Professional refinements */
+.form-control, .form-select {
+    border-color: var(--border-color);
+    box-shadow: none;
+    padding: 0.75rem 1rem; /* Slightly larger padding */
+    font-size: 1rem;
+    color: var(--dark-text-color);
+}
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+textarea.form-control {
+    min-height: 120px; /* Ensure textareas have a good default height */
+}
+.form-label {
+    font-weight: 600;
+    color: var(--dark-text-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Us Page Specific Styling */
+.contact-us-section {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+.contact-us-section h1, .contact-us-section h2 {
+    font-weight: 700;
+    color: var(--dark-text-color);
+    margin-bottom: 1.5rem;
+}
+.contact-us-section .lead {
+    font-size: 1.15rem;
+    color: var(--secondary-color);
+    margin-bottom: 2.5rem;
+}
+
+.contact-info-card {
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    padding: 2rem;
+    background-color: var(--light-bg-color);
+}
+.contact-info-card p {
+    font-size: 1rem;
+    color: var(--dark-text-color);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+.contact-info-card .bi {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-right: 0.75rem;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+
+
+/* General button styling - Ultra-Clean Professional */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: all 0.2s ease;
+    border-radius: 0.25rem;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border-radius: 0.25rem;
+}
+.btn-outline-primary:hover {
+    color: var(--light-text-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.btn-success { /* For place order button in checkout */
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    font-weight: 600;
+    border-radius: 0.25rem;
+}
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+/* Specific styling for Shop Page - Ultra-Clean Professional */
+.container {
+    max-width: 1200px; /* Max width for content */
+}
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+.breadcrumb-item a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.breadcrumb-item.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.card-header {
+    background-color: var(--light-bg-color); /* Clean white header */
+    color: var(--dark-text-color);
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 1.25rem;
+}
+
+.list-group-item {
+    background-color: var(--light-bg-color);
+    border-color: var(--border-color);
+    padding: 0.75rem 1.25rem;
+}
+.list-group-item a {
+    color: var(--dark-text-color);
+    transition: color 0.2s ease;
+}
+.list-group-item a:hover {
+    color: var(--primary-color);
+}
+
+.form-range {
+    margin-top: 0.5rem;
+}
+
+.btn-secondary { /* For sorting dropdown */
+    background-color: var(--light-bg-color);
+    border-color: var(--border-color);
+    color: var(--dark-text-color);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-radius: 0.25rem;
+}
+.btn-secondary:hover {
+    background-color: #f0f0f0;
+    border-color: #d0d0d0;
+    color: var(--dark-text-color);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.dropdown-menu {
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px var(--shadow-color);
+    border-radius: 0.5rem;
+}
+.dropdown-item {
+    color: var(--dark-text-color);
+    transition: background-color 0.1s ease;
+}
+.dropdown-item:hover {
+    background-color: #f5f5f5;
+    color: var(--primary-color);
+}
+
+.pagination {
+    margin-top: 2rem;
+}
+.page-item .page-link {
+    color: var(--primary-color);
+    border-color: var(--border-color);
+    transition: all 0.2s ease;
+    border-radius: 0.25rem;
+    margin: 0 0.1rem; /* Small gap between pages */
+}
+.page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--light-text-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.page-item .page-link:hover {
+    background-color: var(--light-bg-color);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.page-item.disabled .page-link {
+    color: var(--secondary-color);
+    background-color: var(--light-bg-color);
+    border-color: var(--border-color);
+}
+
+/* Small utility for icons in forms/lists */
+.bi {
+    vertical-align: -0.125em;
+    margin-right: 0.25rem;
+    color: var(--primary-color); /* Give icons a subtle primary color */
+}
+
+/* Specific styling for product detail page thumbnail gallery */
+.thumbnail-gallery .thumbnail {
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.thumbnail-gallery .thumbnail:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+.thumbnail-gallery .thumbnail.active {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+/* Accordion in checkout/product detail */
+.accordion-button {
+    font-weight: 600;
+    color: var(--dark-text-color) !important;
+    background-color: var(--light-bg-color) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 0.25rem !important;
+    box-shadow: none !important;
+    transition: all 0.2s ease;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--primary-color) !important;
+    background-color: #f5f5f5 !important;
+    border-bottom-color: var(--primary-color) !important;
+}
+.accordion-button:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+.accordion-body {
+    background-color: #fcfcfc;
+    border: 1px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 0.25rem 0.25rem;
+}
+
+/* Form controls - Professional refinements */
+.form-control, .form-select {
+    border-color: var(--border-color);
+    box-shadow: none;
+    padding: 0.75rem 1rem; /* Slightly larger padding */
+    font-size: 1rem;
+    color: var(--dark-text-color);
+}
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+textarea.form-control {
+    min-height: 120px; /* Ensure textareas have a good default height */
+}
+.form-label {
+    font-weight: 600;
+    color: var(--dark-text-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Us Page Specific Styling */
+.contact-us-section {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+.contact-us-section h1, .contact-us-section h2 {
+    font-weight: 700;
+    color: var(--dark-text-color);
+    margin-bottom: 1.5rem;
+}
+.contact-us-section .lead {
+    font-size: 1.15rem;
+    color: var(--secondary-color);
+    margin-bottom: 2.5rem;
+}
+
+.contact-info-card {
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    padding: 2rem;
+    background-color: var(--light-bg-color);
+}
+.contact-info-card p {
+    font-size: 1rem;
+    color: var(--dark-text-color);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+.contact-info-card .bi {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-right: 0.75rem;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+/* --- Homepage Colorful Design Overrides --- */
+
+/* Homepage Color Palette for colorful elements */
+.homepage-colorful {
+    --homepage-primary-color: #FF5733; /* Bright Orange */
+    --homepage-secondary-color: #33FF57; /* Vibrant Green */
+    --homepage-accent-color: #3357FF; /* Electric Blue */
+    --homepage-text-color: #343a40; /* Dark text for contrast */
+    --homepage-light-text-color: #ffffff; /* White text */
+}
+
+/* Hero Section - Colorful */
+.hero-section.homepage-colorful {
+    background-image: linear-gradient(135deg, var(--homepage-primary-color) 0%, var(--homepage-accent-color) 100%);
+    background-color: var(--homepage-primary-color); /* Fallback */
+    background-position: center;
+    color: var(--homepage-light-text-color);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+.hero-section.homepage-colorful::before {
+    background-color: rgba(0, 0, 0, 0.2); /* Lighter overlay for brighter colors */
+}
+.hero-section.homepage-colorful .display-4 {
+    color: var(--homepage-light-text-color);
+    font-weight: 900;
+}
+.hero-section.homepage-colorful .lead {
+    color: var(--homepage-light-text-color);
+}
+.hero-section.homepage-colorful .btn-primary {
+    background-color: var(--homepage-secondary-color);
+    border-color: var(--homepage-secondary-color);
+    color: var(--homepage-text-color);
+    font-weight: 700;
+}
+.hero-section.homepage-colorful .btn-primary:hover {
+    background-color: #2ECC40; /* Darker green */
+    border-color: #2ECC40;
+    transform: translateY(-2px);
+}
+
+/* Featured Categories - Colorful */
+.featured-categories.homepage-colorful .overlay-card {
+    border: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 0.75rem;
+    background-color: var(--homepage-light-text-color);
+}
+.featured-categories.homepage-colorful .overlay-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    transform: translateY(-10px);
+}
+.featured-categories.homepage-colorful .overlay-card img {
+    filter: brightness(0.7); /* More dim for colorful overlay */
+}
+.featured-categories.homepage-colorful .overlay-card:hover img {
+    filter: brightness(0.5);
+}
+.featured-categories.homepage-colorful .overlay-card .card-img-overlay {
+    background: linear-gradient(135deg, rgba(255, 87, 51, 0.7) 0%, rgba(51, 87, 255, 0.7) 100%); /* Vibrant gradient overlay */
+}
+.featured-categories.homepage-colorful .overlay-card:hover .card-img-overlay {
+    background: linear-gradient(135deg, rgba(255, 87, 51, 0.8) 0%, rgba(51, 87, 255, 0.8) 100%);
+}
+.featured-categories.homepage-colorful .overlay-card .card-title {
+    color: var(--homepage-light-text-color);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+/* New Arrivals/Featured Products - Colorful */
+.new-arrivals.homepage-colorful {
+    background-color: #e0f7fa; /* Light blue background */
+}
+.new-arrivals.homepage-colorful .product-card {
+    border: 1px solid #c8e6c9; /* Light green border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.new-arrivals.homepage-colorful .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.new-arrivals.homepage-colorful .product-card .card-img-top {
+    border-bottom: 2px solid var(--homepage-accent-color);
+}
+.new-arrivals.homepage-colorful .product-card .card-title {
+    color: var(--homepage-text-color);
+}
+.new-arrivals.homepage-colorful .product-card .card-text {
+    color: #4CAF50; /* Green price */
+    font-weight: 700;
+}
+.new-arrivals.homepage-colorful .product-card .btn-outline-primary {
+    color: var(--homepage-primary-color);
+    border-color: var(--homepage-primary-color);
+}
+.new-arrivals.homepage-colorful .product-card .btn-outline-primary:hover {
+    background-color: var(--homepage-primary-color);
+    color: var(--homepage-light-text-color);
+}
+
+/* Promotional Section - Colorful */
+.promo-section.homepage-colorful {
+    background-image: linear-gradient(45deg, #FF9800 0%, #FF5722 100%); /* Orange-red gradient */
+    color: var(--homepage-light-text-color);
+    padding: 100px 0;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+.promo-section.homepage-colorful .btn {
+    background-color: var(--homepage-light-text-color);
+    color: #FF5722;
+    border: none;
+    font-weight: 700;
+}
+.promo-section.homepage-colorful .btn:hover {
+    background-color: #f0f0f0;
+    color: #E64A19;
+}
+
+/* Testimonials - Colorful */
+.testimonials.homepage-colorful {
+    background-color: #fff9c4; /* Light yellow background */
+}
+.testimonials.homepage-colorful .card {
+    border: 1px solid #FFCDD2; /* Light red border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.testimonials.homepage-colorful .card-text {
+    color: var(--homepage-text-color);
+}
+.testimonials.homepage-colorful .blockquote-footer {
+    color: #FF7043; /* Orange footer text */
+}

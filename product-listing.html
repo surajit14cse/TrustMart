@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop All Products - TrustMart</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">TrustMart</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="product-listing.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-listing.html">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex">
+                    <a href="#" class="nav-link me-2"><i class="bi bi-search"></i></a>
+                    <a href="#" class="nav-link me-2"><i class="bi bi-person"></i></a>
+                    <a href="cart.html" class="nav-link"><i class="bi bi-cart"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container my-5">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                </ol>
+            </nav>
+
+            <div class="row">
+                <!-- Sidebar Filters -->
+                <div class="col-lg-3">
+                    <h4 class="mb-3">Filters</h4>
+                    <div class="card mb-3">
+                        <div class="card-header">Categories</div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#" class="text-decoration-none">Electronics</a></li>
+                            <li class="list-group-item"><a href="#" class="text-decoration-none">Apparel</a></li>
+                            <li class="list-group-item"><a href="#" class="text-decoration-none">Home Goods</a></li>
+                            <li class="list-group-item"><a href="#" class="text-decoration-none">Books</a></li>
+                        </ul>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header">Price Range</div>
+                        <div class="card-body">
+                            <input type="range" class="form-range" min="0" max="1000" id="priceRange">
+                            <div class="d-flex justify-content-between">
+                                <span>$0</span>
+                                <span>$1000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header">Brand</div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#" class="text-decoration-none">Brand A</a></li>
+                            <li class="list-group-item"><a href="#" class="text-decoration-none">Brand B</a></li>
+                            <li class="list-group-item"><a href="#" class="text-decoration-none">Brand C</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="col-lg-9">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2>All Products</h2>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sort by
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+                                <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+                                <li><a class="dropdown-item" href="#">Popularity</a></li>
+                                <li><a class="dropdown-item" href="#">Newest Arrivals</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Product Cards -->
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="card h-100 product-card">
+                                <img src="https://via.placeholder.com/300x200?text=Listing+Product+1" class="card-img-top" alt="Listing Product 1">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Product Name 1</h5>
+                                    <p class="card-text text-muted">$25.00</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="card h-100 product-card">
+                                <img src="https://via.placeholder.com/300x200?text=Listing+Product+2" class="card-img-top" alt="Listing Product 2">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Product Name 2</h5>
+                                    <p class="card-text text-muted">$50.00</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="card h-100 product-card">
+                                <img src="https://via.placeholder.com/300x200?text=Listing+Product+3" class="card-img-top" alt="Listing Product 3">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Product Name 3</h5>
+                                    <p class="card-text text-muted">$75.00</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="card h-100 product-card">
+                                <img src="https://via.placeholder.com/300x200?text=Listing+Product+4" class="card-img-top" alt="Listing Product 4">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Product Name 4</h5>
+                                    <p class="card-text text-muted">$100.00</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="card h-100 product-card">
+                                <img src="https://via.placeholder.com/300x200?text=Listing+Product+5" class="card-img-top" alt="Listing Product 5">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Product Name 5</h5>
+                                    <p class="card-text text-muted">$125.00</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="card h-100 product-card">
+                                <img src="https://via.placeholder.com/300x200?text=Listing+Product+6" class="card-img-top" alt="Listing Product 6">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Product Name 6</h5>
+                                    <p class="card-text text-muted">$150.00</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">TrustMart</h5>
+                    <p>
+                        Providing you with the best products and an unparalleled shopping experience.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="about.html" class="text-dark">About Us</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="text-dark">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Connect</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#" class="text-dark">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2025 TrustMart. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

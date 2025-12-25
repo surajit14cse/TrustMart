@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Name - TrustMart</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">TrustMart</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="product-listing.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-listing.html">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex">
+                    <a href="#" class="nav-link me-2"><i class="bi bi-search"></i></a>
+                    <a href="#" class="nav-link me-2"><i class="bi bi-person"></i></a>
+                    <a href="cart.html" class="nav-link"><i class="bi bi-cart"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container my-5">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="product-listing.html">Shop</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Product Name</li>
+                </ol>
+            </nav>
+
+            <div class="row">
+                <!-- Left Column: Product Images -->
+                <div class="col-lg-6">
+                    <div class="main-product-image mb-3">
+                        <img src="assets/images/DesignerHandbag.png" class="img-fluid rounded" alt="Designer Handbag">
+                    </div>
+                    <div class="row row-cols-4 g-2 thumbnail-gallery">
+                        <div class="col">
+                            <img src="https://via.placeholder.com/150x100?text=Thumb+1" class="img-fluid rounded thumbnail active" alt="Thumbnail 1">
+                        </div>
+                        <div class="col">
+                            <img src="https://via.placeholder.com/150x100?text=Thumb+2" class="img-fluid rounded thumbnail" alt="Thumbnail 2">
+                        </div>
+                        <div class="col">
+                            <img src="https://via.placeholder.com/150x100?text=Thumb+3" class="img-fluid rounded thumbnail" alt="Thumbnail 3">
+                        </div>
+                        <div class="col">
+                            <img src="https://via.placeholder.com/150x100?text=Thumb+4" class="img-fluid rounded thumbnail" alt="Thumbnail 4">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Product Information -->
+                <div class="col-lg-6">
+                    <h1 class="mb-3">Designer Handbag</h1>
+                    <p class="h3 text-primary mb-3">$120.00</p>
+                    <p class="text-muted">A sleek and powerful smartwatch designed for your active lifestyle. Track your fitness, receive notifications, and stay connected.</p>
+
+                    <div class="mb-3">
+                        <label for="colorSelect" class="form-label">Color:</label>
+                        <select class="form-select" id="colorSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">Black</option>
+                            <option value="2">Silver</option>
+                            <option value="3">Rose Gold</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="quantityInput" class="form-label">Quantity:</label>
+                        <input type="number" class="form-control" id="quantityInput" value="1" min="1" style="width: 80px;">
+                    </div>
+
+                    <div class="d-grid gap-2 mb-4">
+                        <button class="btn btn-primary btn-lg" type="button"><i class="bi bi-cart-plus me-2"></i>Add to Cart</button>
+                    </div>
+
+                    <!-- Detailed Description/Specifications -->
+                    <div class="accordion" id="productDetailsAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Product Description
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#productDetailsAccordion">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Specifications
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#productDetailsAccordion">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>**Display:** 1.8-inch AMOLED</li>
+                                        <li>**Battery Life:** Up to 7 days</li>
+                                        <li>**Water Resistance:** 5 ATM</li>
+                                        <li>**Sensors:** Heart rate, SpO2, Accelerometer</li>
+                                        <li>**Connectivity:** Bluetooth 5.0</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Customer Reviews
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#productDetailsAccordion">
+                                <div class="accordion-body">
+                                    <div class="mb-3">
+                                        <strong>User123</strong> - <small class="text-muted">5 Stars</small>
+                                        <p>Absolutely love this smartwatch! It's stylish and the battery life is fantastic.</p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <strong>TechGuru</strong> - <small class="text-muted">4 Stars</small>
+                                        <p>Great features for the price. The display is vibrant.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">TrustMart</h5>
+                    <p>
+                        Providing you with the best products and an unparalleled shopping experience.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="about.html" class="text-dark">About Us</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="text-dark">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Connect</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#" class="text-dark">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2025 TrustMart. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
