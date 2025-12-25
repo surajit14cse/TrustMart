@@ -112,6 +112,7 @@ body {
     top: 0;
     left: 0;
     filter: brightness(0.9); /* Slightly less dim to show more image */
+    opacity: 1; /* Set opacity to 100% */
     transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
