@@ -73,19 +73,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Update product title
-        const productTitle = document.querySelector('.col-lg-6 h1.mb-3');
+        const productTitle = document.getElementById('product-name');
         if (productTitle) {
             productTitle.textContent = product.name;
         }
 
         // Update product price
-        const productPrice = document.querySelector('.col-lg-6 p.h3');
+        const productPrice = document.getElementById('product-price');
         if (productPrice) {
             productPrice.textContent = product.price;
         }
 
         // Update product description
-        const productDescription = document.querySelector('.col-lg-6 p.text-muted');
+        const productDescription = document.getElementById('product-description');
         if (productDescription) {
             productDescription.textContent = product.description;
         }
